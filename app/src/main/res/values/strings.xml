@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AgeCal</string>
+    <string name="b1">Age</string>
+    <string name="title_activity_second">Second</string>
+</resources>

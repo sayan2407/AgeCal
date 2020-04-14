@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/design"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:background="@color/color2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Age Calculator"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/dob"
+        android:text="Date of Birth:"
+        android:layout_below="@+id/tool_bar"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/dob1"
+        android:layout_below="@+id/dob"
+        android:text="choose your Date of Birth"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:inputType="none"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tday"
+        android:text="Today's Day:"
+        android:layout_below="@+id/dob1"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/tday1"
+        android:layout_below="@+id/tday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="choose Today's Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/cal"
+        android:text="Calculate"
+        android:textSize="25dp"
+        android:textColor="@color/green"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tday1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/res"
+        android:text="Reset"
+        android:textSize="25dp"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/cal"
+        android:textColor="@color/green"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/tday1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/age"
+        android:textColor="@color/blue"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
